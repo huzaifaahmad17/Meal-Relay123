@@ -1,3 +1,39 @@
+'use client';
+                    <div className="text-[11px] text-muted-foreground">
+                      {timeAgo(a.createdAt)}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Delivered history */}
+      <Card className="border">
+        <CardHeader className="flex flex-row items-center justify-between">
+          <div>
+            <CardTitle>Recent deliveries</CardTitle>
+            <p className="text-xs text-muted-foreground mt-1">Donations that reached the community</p>
+          </div>
+          <Badge className="bg-emerald-100 text-emerald-800 border border-emerald-200">
+            {delivered.length} delivered
+          </Badge>
+        </CardHeader>
+        <CardContent className="space-y-3">
+          {delivered.length === 0 ? (
+            <p className="text-sm text-muted-foreground text-center py-6">
+              Your delivered donations will show up here.
+            </p>
+          ) : (
+            delivered.slice(0, 3).map((d) => <DonationCard key={d.id} donation={d} compact />)
+          )}
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
 
 function EmptyState() {
   return (
