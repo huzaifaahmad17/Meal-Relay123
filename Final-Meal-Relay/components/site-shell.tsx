@@ -78,7 +78,7 @@ export function SiteShell({ children, transparentNav = false }: SiteShellProps) 
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-emerald-700 dark:text-emerald-400 hover:text-emerald-800"
+                    className="text-blue-700 dark:text-blue-400 hover:text-blue-800"
                 >
                   Donate food
                 </Button>
@@ -87,7 +87,7 @@ export function SiteShell({ children, transparentNav = false }: SiteShellProps) 
                 <Link href={dashboardLink}>
                   <Button
                     size="sm"
-                    className="bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20"
+                    className="bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-600/20"
                   >
                     Open dashboard
                     <ArrowRight className="w-4 h-4 ml-1" />
@@ -103,7 +103,7 @@ export function SiteShell({ children, transparentNav = false }: SiteShellProps) 
                   <Link href="/auth/register">
                     <Button
                       size="sm"
-                      className="bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20"
+                      className="bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-600/20"
                     >
                       Get started
                     </Button>
@@ -141,7 +141,7 @@ export function SiteShell({ children, transparentNav = false }: SiteShellProps) 
                 </Link>
                 {user ? (
                   <Link href={dashboardLink} onClick={() => setOpen(false)}>
-                    <Button size="sm" className="w-full bg-emerald-600 hover:bg-emerald-700">
+                    <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
                       Open dashboard
                     </Button>
                   </Link>
@@ -153,7 +153,7 @@ export function SiteShell({ children, transparentNav = false }: SiteShellProps) 
                       </Button>
                     </Link>
                     <Link href="/auth/register" onClick={() => setOpen(false)}>
-                      <Button size="sm" className="w-full bg-emerald-600 hover:bg-emerald-700">
+                      <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
                         Get started
                       </Button>
                     </Link>

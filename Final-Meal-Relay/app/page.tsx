@@ -85,7 +85,7 @@ function Hero() {
                   />
                   <defs>
                     <linearGradient id="hero-grad" x1="0" y1="0" x2="200" y2="0">
-                      <stop stopColor="#10b981" />
+                      <stop stopColor="#2563eb" />
                       <stop offset="1" stopColor="#14b8a6" />
                     </linearGradient>
                   </defs>

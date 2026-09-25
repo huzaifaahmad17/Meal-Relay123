@@ -224,7 +224,7 @@ export function LiveMap() {
 
     const path: [number, number][] = live.trackingPath.map((p) => [p.lat, p.lng]);
     const route = L.polyline(path, {
-      color: '#10b981',
+      color: '#2563eb',
       weight: 5,
       opacity: 0.85,
       dashArray: '8 6',
@@ -337,7 +337,7 @@ export function LiveMap() {
             Legend
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs">
-            <Legend color="#10b981" label="Donor" />
+            <Legend color="#2563eb" label="Donor" />
             <Legend color="#f59e0b" label="NGO" />
             <Legend color="#3b82f6" label="Volunteer" />
             <Legend color="#ef4444" label="Pickup" />
@@ -555,7 +555,7 @@ function SelectionCard({
 // ────────────────────────────────────────────────────────────────────────────────
 function makeUserIcon(L: typeof LeafletNS, u: DemoUser) {
   const colors: Record<string, string> = {
-    donor: '#10b981',
+    donor: '#2563eb',
     ngo: '#f59e0b',
     volunteer: '#3b82f6',
     admin: '#64748b',
@@ -584,7 +584,7 @@ function makeUserIcon(L: typeof LeafletNS, u: DemoUser) {
 function makeDonationIcon(L: typeof LeafletNS, d: Donation) {
   const color =
     d.status === 'delivered'
-      ? '#10b981'
+      ? '#2563eb'
       : d.status === 'in-transit' || d.status === 'picked-up'
       ? '#6366f1'
       : d.status === 'assigned' || d.status === 'accepted'
