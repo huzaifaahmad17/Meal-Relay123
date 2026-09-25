@@ -142,11 +142,11 @@ export default function MapInterface() {
   // Custom icon creators
   const createCustomIcon = (type: string, status?: string) => {
     const colors = {
-      donor: status === 'completed' ? '#2563eb' : status === 'active' ? '#3b82f6' : '#6b7280',
-      ngo: status === 'completed' ? '#2563eb' : status === 'active' ? '#8b5cf6' : '#6b7280',
-      volunteer: status === 'completed' ? '#2563eb' : status === 'active' ? '#f59e0b' : '#6b7280',
-      pickup: status === 'completed' ? '#2563eb' : status === 'active' ? '#ef4444' : '#6b7280',
-      delivery: status === 'completed' ? '#2563eb' : status === 'active' ? '#06b6d4' : '#6b7280',
+      donor: status === 'completed' ? '#10b981' : status === 'active' ? '#3b82f6' : '#6b7280',
+      ngo: status === 'completed' ? '#10b981' : status === 'active' ? '#8b5cf6' : '#6b7280',
+      volunteer: status === 'completed' ? '#10b981' : status === 'active' ? '#f59e0b' : '#6b7280',
+      pickup: status === 'completed' ? '#10b981' : status === 'active' ? '#ef4444' : '#6b7280',
+      delivery: status === 'completed' ? '#10b981' : status === 'active' ? '#06b6d4' : '#6b7280',
     };
 
     const color = colors[type as keyof typeof colors] || '#6b7280';
@@ -188,7 +188,7 @@ export default function MapInterface() {
           <div style="min-width: 200px;">
             <h3 style="margin: 0 0 8px 0; font-weight: bold;">${location.name}</h3>
             <p style="margin: 0 0 8px 0; font-size: 12px; color: #666;">${location.address}</p>
-            ${location.status ? `<span style="background: ${location.status === 'active' ? '#3b82f6' : location.status === 'completed' ? '#2563eb' : '#f59e0b'}; color: white; padding: 2px 8px; border-radius: 12px; font-size: 10px;">${location.status}</span>` : ''}
+            ${location.status ? `<span style="background: ${location.status === 'active' ? '#3b82f6' : location.status === 'completed' ? '#10b981' : '#f59e0b'}; color: white; padding: 2px 8px; border-radius: 12px; font-size: 10px;">${location.status}</span>` : ''}
             ${location.details?.foodType ? `<br><br><strong>Food Type:</strong> ${location.details.foodType}` : ''}
             ${location.details?.quantity ? `<br><strong>Quantity:</strong> ${location.details.quantity}` : ''}
             ${location.details?.estimatedTime ? `<br><strong>ETA:</strong> ${location.details.estimatedTime}` : ''}

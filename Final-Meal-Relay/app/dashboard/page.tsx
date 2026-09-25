@@ -1,5 +1,4 @@
 'use client';
-<<<<<<< HEAD
 
 import Link from 'next/link';
 import {
@@ -169,8 +168,8 @@ function DonorDashboardBody() {
                 <AreaChart data={trend}>
                   <defs>
                     <linearGradient id="rescueGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#2563eb" stopOpacity={0.5} />
-                      <stop offset="100%" stopColor="#2563eb" stopOpacity={0} />
+                      <stop offset="0%" stopColor="#10b981" stopOpacity={0.5} />
+                      <stop offset="100%" stopColor="#10b981" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" vertical={false} />
@@ -192,7 +191,7 @@ function DonorDashboardBody() {
                   <Area
                     type="monotone"
                     dataKey="kg"
-                    stroke="#2563eb"
+                    stroke="#10b981"
                     strokeWidth={2}
                     fill="url(#rescueGrad)"
                   />

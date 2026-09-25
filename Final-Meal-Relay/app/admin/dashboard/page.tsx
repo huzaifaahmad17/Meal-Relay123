@@ -44,7 +44,7 @@ import {
 } from 'recharts';
 import { cn } from '@/lib/utils';
 
-const PIE_COLORS = ['#2563eb', '#0ea5e9', '#f59e0b', '#8b5cf6', '#ef4444', '#14b8a6', '#6366f1', '#ec4899'];
+const PIE_COLORS = ['#10b981', '#0ea5e9', '#f59e0b', '#8b5cf6', '#ef4444', '#14b8a6', '#6366f1', '#ec4899'];
 
 export default function AdminDashboardPage() {
   return (
@@ -154,8 +154,8 @@ function AdminBody() {
               <AreaChart data={trend}>
                 <defs>
                   <linearGradient id="adminGrad1" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#2563eb" stopOpacity={0.5} />
-                    <stop offset="100%" stopColor="#2563eb" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#10b981" stopOpacity={0.5} />
+                    <stop offset="100%" stopColor="#10b981" stopOpacity={0} />
                   </linearGradient>
                   <linearGradient id="adminGrad2" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#0ea5e9" stopOpacity={0.5} />
@@ -183,7 +183,7 @@ function AdminBody() {
                   type="monotone"
                   dataKey="donations"
                   name="Donations"
-                  stroke="#2563eb"
+                  stroke="#10b981"
                   fill="url(#adminGrad1)"
                   strokeWidth={2}
                 />
@@ -274,7 +274,7 @@ function AdminBody() {
                       fontSize: 12,
                     }}
                   />
-                  <Bar dataKey="count" fill="#2563eb" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="count" fill="#10b981" radius={[0, 6, 6, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>

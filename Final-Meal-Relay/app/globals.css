@@ -56,12 +56,12 @@
   height: 40px;
   border-radius: 50%;
   background: white;
-  border: 3px solid #2563eb;
+  border: 3px solid #10b981;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  box-shadow: 0 6px 20px -2px rgba(37, 99, 235, 0.6);
+  box-shadow: 0 6px 20px -2px rgba(16, 185, 129, 0.6);
 }
 
 @keyframes zwl-pulse {
@@ -97,8 +97,8 @@
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 221 83% 53%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
@@ -109,7 +109,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 221 83% 53%;
+    --ring: 0 0% 3.9%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -124,8 +124,8 @@
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
@@ -136,57 +136,13 @@
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 217 91% 60%;
+    --ring: 0 0% 83.1%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
-
-/* Keep legacy utility names visually aligned with the blue brand palette. */
-@layer utilities {
-  [class*="emerald-"],
-  [class*="green-"],
-  [class*="teal-"] {
-    --tw-ring-color: rgb(37 99 235 / var(--tw-ring-opacity, 1)) !important;
-    --tw-shadow-color: rgb(37 99 235 / var(--tw-shadow-alpha, 1)) !important;
-  }
-
-  [class~="bg-emerald-50"], [class~="bg-green-50"], [class~="bg-teal-50"],
-  [class~="bg-emerald-100"], [class~="bg-green-100"], [class~="bg-teal-100"] { background-color: #eff6ff !important; }
-  [class~="bg-emerald-500"], [class~="bg-green-500"], [class~="bg-teal-500"] { background-color: #3b82f6 !important; }
-  [class~="bg-emerald-600"], [class~="bg-green-600"], [class~="bg-teal-600"] { background-color: #2563eb !important; }
-  [class~="bg-emerald-700"], [class~="bg-green-700"], [class~="bg-teal-700"] { background-color: #1d4ed8 !important; }
-  [class~="bg-emerald-950"], [class~="bg-green-950"], [class~="bg-teal-950"] { background-color: #172554 !important; }
-  [class*="hover:bg-emerald-50"]:hover, [class*="hover:bg-green-50"]:hover, [class*="hover:bg-teal-50"]:hover { background-color: #eff6ff !important; }
-  [class*="hover:bg-emerald-600"]:hover, [class*="hover:bg-green-600"]:hover, [class*="hover:bg-teal-600"]:hover { background-color: #2563eb !important; }
-  [class*="hover:bg-emerald-700"]:hover, [class*="hover:bg-green-700"]:hover, [class*="hover:bg-teal-700"]:hover { background-color: #1d4ed8 !important; }
-
-  [class~="text-emerald-500"], [class~="text-green-500"], [class~="text-teal-500"] { color: #3b82f6 !important; }
-  [class~="text-emerald-600"], [class~="text-green-600"], [class~="text-teal-600"] { color: #2563eb !important; }
-  [class~="text-emerald-700"], [class~="text-green-700"], [class~="text-teal-700"] { color: #1d4ed8 !important; }
-  [class~="text-emerald-800"], [class~="text-green-800"], [class~="text-teal-800"],
-  [class~="text-emerald-900"], [class~="text-green-900"], [class~="text-teal-900"] { color: #1e3a8a !important; }
-  [class*="hover:text-emerald-600"]:hover, [class*="hover:text-green-600"]:hover, [class*="hover:text-teal-600"]:hover { color: #2563eb !important; }
-  [class*="hover:text-emerald-700"]:hover, [class*="hover:text-green-700"]:hover, [class*="hover:text-teal-700"]:hover { color: #1d4ed8 !important; }
-
-  [class~="border-emerald-100"], [class~="border-green-100"], [class~="border-teal-100"],
-  [class~="border-emerald-200"], [class~="border-green-200"], [class~="border-teal-200"],
-  [class~="border-emerald-300"], [class~="border-green-300"], [class~="border-teal-300"] { border-color: #bfdbfe !important; }
-  [class~="border-emerald-400"], [class~="border-green-400"], [class~="border-teal-400"],
-  [class~="border-emerald-500"], [class~="border-green-500"], [class~="border-teal-500"],
-  [class~="border-emerald-600"], [class~="border-green-600"], [class~="border-teal-600"] { border-color: #2563eb !important; }
-
-  [class~="from-emerald-50"], [class~="from-green-50"], [class~="from-teal-50"] { --tw-gradient-from: #eff6ff var(--tw-gradient-from-position) !important; }
-  [class~="from-emerald-100"], [class~="from-green-100"], [class~="from-teal-100"] { --tw-gradient-from: #dbeafe var(--tw-gradient-from-position) !important; }
-  [class~="from-emerald-500"], [class~="from-green-500"], [class~="from-teal-500"] { --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position) !important; }
-  [class~="from-emerald-600"], [class~="from-green-600"], [class~="from-teal-600"] { --tw-gradient-from: #2563eb var(--tw-gradient-from-position) !important; }
-  [class~="to-emerald-50"], [class~="to-green-50"], [class~="to-teal-50"] { --tw-gradient-to: #eff6ff var(--tw-gradient-to-position) !important; }
-  [class~="to-emerald-500"], [class~="to-green-500"], [class~="to-teal-500"] { --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position) !important; }
-  [class~="to-emerald-600"], [class~="to-green-600"], [class~="to-teal-600"] { --tw-gradient-to: #2563eb var(--tw-gradient-to-position) !important; }
-  [class~="to-emerald-700"], [class~="to-green-700"], [class~="to-teal-700"] { --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position) !important; }
 }
 
 @layer base {

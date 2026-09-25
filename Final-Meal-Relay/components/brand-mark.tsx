@@ -28,7 +28,7 @@ export function BrandMark({
     <div className={cn('flex items-center gap-2.5', className)}>
       <div
         className={cn(
-          'rounded-xl bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 grid place-items-center shadow-lg shadow-blue-500/20 ring-1 ring-white/10',
+          'rounded-xl bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-600 grid place-items-center shadow-lg shadow-emerald-500/20 ring-1 ring-white/10',
           s.box,
         )}
       >
