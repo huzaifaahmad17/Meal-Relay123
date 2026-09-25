@@ -1,4 +1,5 @@
 'use client';
+<<<<<<< HEAD
 
 import Link from 'next/link';
 import {
@@ -282,6 +283,8 @@ function DonorDashboardBody() {
                       <span className="text-muted-foreground">{a.action}</span>{' '}
                       <span className="font-medium">{a.subject}</span>
                     </div>
+=======
+>>>>>>> 61a64d0b8e006783ad2bffa54ed868ba383db99e
                     <div className="text-[11px] text-muted-foreground">
                       {timeAgo(a.createdAt)}
                     </div>
