@@ -27,6 +27,7 @@ It ships in two tiers:
 - **Dynamic analytics** — Recharts dashboards with food waste trends, category breakdowns, NGO leaderboard, operational health radar
 - **Smart actions that propagate live** — accepting a donation as an NGO instantly updates the donor's dashboard, the volunteer's task list, and the live map
 - **Polished, responsive UI** — built with Tailwind, shadcn/ui, dark mode, custom Leaflet markers, gradient cards, sticky topbars
+- **Blue visual theme** — shared green/emerald accents are mapped to a blue palette, with cyan secondary accents across the UI, charts and maps
 - **Cohesive Jaipur context** — fictional Jaipur neighborhoods, Jaipur Food Bank, Robin Hood Army, Akshaya Patra, Annamrita, and restaurant partners
 
 ---
@@ -161,6 +162,7 @@ You'll need MongoDB running locally (or a connection string in `.env`). The fron
 ```
 app/
 ├── page.tsx                    # Polished landing page
+├── globals.css                 # Global styles and blue visual palette
 ├── donate/                     # Donation flow + form
 ├── auth/                       # Login + register
 ├── dashboard/                  # Donor dashboard + sub-pages
