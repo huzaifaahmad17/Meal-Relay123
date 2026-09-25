@@ -11,6 +11,8 @@
 
 Meal Relay is a polished, production-style web app that connects donors (restaurants, hotels, weddings, home kitchens) with verified NGOs and volunteers — so surplus food gets rescued in minutes instead of being thrown away.
 
+The application source and npm workspace are in the `Final-Meal-Relay/` directory.
+
 It ships in two tiers:
 
 1. **Demo mode (default)** — fully client-side. No backend, no MongoDB, no API keys needed. Auth, donations, chat, map, dashboards and AI features all work against an in-memory store backed by `localStorage`. Perfect for presentations, demos, hackathons, or shipping a static deploy.
@@ -35,6 +37,9 @@ It ships in two tiers:
 ## Quick start
 
 ```bash
+# From the repository root
+cd Final-Meal-Relay
+
 # Install
 npm install
 
@@ -160,46 +165,40 @@ You'll need MongoDB running locally (or a connection string in `.env`). The fron
 ### Frontend (Next.js 13 App Router)
 
 ```
-app/
-├── page.tsx                    # Polished landing page
-├── globals.css                 # Global styles and blue visual palette
-├── donate/                     # Donation flow + form
-├── auth/                       # Login + register
-├── dashboard/                  # Donor dashboard + sub-pages
-├── ngo/dashboard/              # NGO dashboard + donations + volunteers
-├── volunteer/dashboard/        # Volunteer dashboard + tasks
-├── admin/dashboard/            # Admin + users + donations + ngos
-├── map/                        # Interactive Leaflet map
-├── chat/                       # Real-time chat
-├── analytics/                  # Recharts dashboards
-└── api/                        # Optional Next.js API proxies
-
-components/
-├── site-shell.tsx              # Public top nav + footer
-├── dashboard-shell.tsx         # Sidebar + topbar (auth-aware)
-├── live-map.tsx                # Leaflet map with animated truck
-├── donation-form.tsx           # 3-step form with AI image analysis
-├── theme-provider.tsx          # next-themes wrapper (dark mode)
-├── brand-mark.tsx              # Logo + wordmark
-└── dashboard/
-    ├── stat-card.tsx           # KPI tile
-    ├── donation-card.tsx       # Donation row card
-    ├── donations-list.tsx      # Filterable donations table
-    └── ai-insights.tsx         # Role-aware AI insights panel
-
-lib/
-├── types.ts                    # Shared domain types
-├── seed-data.ts                # Realistic Indian seed: users, donations, chats
-├── demo-store.ts               # Pub/sub store + CRUD + auth (localStorage)
-├── use-demo-store.ts           # React hooks (useDemoStore, useCurrentUser)
-├── ai.ts                       # Simulated AI helpers
-└── api.ts                      # Optional Express backend client
-
-server/                         # Optional Express + MongoDB backend
-├── index.js                    # Express + Socket.io entrypoint
-├── models/                     # Mongoose models
-├── routes/                     # REST endpoints
-└── middleware/                 # Auth middleware
+Final-Meal-Relay/
+├── app/
+│   ├── page.tsx                # Polished landing page
+│   ├── globals.css             # Global styles and blue visual palette
+│   ├── donate/                 # Donation flow + form
+│   ├── auth/                   # Login + register
+│   ├── dashboard/              # Donor dashboard + sub-pages
+│   ├── ngo/dashboard/          # NGO dashboard + donations + volunteers
+│   ├── volunteer/dashboard/    # Volunteer dashboard + tasks
+│   ├── admin/dashboard/        # Admin + users + donations + ngos
+│   ├── map/                    # Interactive Leaflet map
+│   ├── chat/                   # Real-time chat
+│   ├── analytics/              # Recharts dashboards
+│   └── api/                    # Optional Next.js API proxies
+├── components/
+│   ├── site-shell.tsx          # Public top nav + footer
+│   ├── dashboard-shell.tsx     # Sidebar + topbar (auth-aware)
+│   ├── live-map.tsx            # Leaflet map with animated truck
+│   ├── donation-form.tsx       # 3-step form with AI image analysis
+│   ├── theme-provider.tsx      # next-themes wrapper (dark mode)
+│   ├── brand-mark.tsx          # Logo + wordmark
+│   └── dashboard/              # Dashboard-specific components
+├── lib/
+│   ├── types.ts                # Shared domain types
+│   ├── seed-data.ts            # Realistic Indian seed: users, donations, chats
+│   ├── demo-store.ts           # Pub/sub store + CRUD + auth (localStorage)
+│   ├── use-demo-store.ts       # React hooks (useDemoStore, useCurrentUser)
+│   ├── ai.ts                   # Simulated AI helpers
+│   └── api.ts                  # Optional Express backend client
+└── server/                     # Optional Express + MongoDB backend
+    ├── index.js                # Express + Socket.io entrypoint
+    ├── models/                 # Mongoose models
+    ├── routes/                 # REST endpoints
+    └── middleware/             # Auth middleware
 ```
 
 ### Demo store
