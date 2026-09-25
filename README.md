@@ -9,7 +9,7 @@
 [![Leaflet](https://img.shields.io/badge/Leaflet-1.9-199900)](https://leafletjs.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Meal Relay is a polished, production-style web app that connects donors (restaurants, hotels, weddings, home kitchens) with verified NGOs and volunteers — so surplus food gets rescued in minutes instead of being thrown away.
+Meal Relay is a polished, production-style web app that connects donors (restaurants, hotels, weddings, home kitchens) with verified NGOs and volunteers — so surplus food gets rescued in minutes instead of being thrown away..
 
 The application source and npm workspace are in the `Final-Meal-Relay/` directory.
 
